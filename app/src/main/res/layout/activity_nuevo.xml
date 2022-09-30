@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.NuevoContactoMain">
+
+    <EditText
+        android:id="@+id/textNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/hint_nombre"
+        android:inputType="textPersonName"
+        android:textColor="#757575"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_telefono"
+        android:inputType="phone"
+        android:textColor="#757575"
+        android:textSize="24sp"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/txtCorreoElectronico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_Correo_Electronico"
+        android:inputType="textEmailAddress"
+        android:textColor="#757575"
+        android:textSize="24sp"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btnGuarda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AC9696"
+        android:backgroundTint="#AC9696"
+        android:hint="@string/btn_guarda"
+        android:textColorHint="#F1ECEC"
+        android:textSize="24sp"
+        android:layout_margin="30dp"/>
+</LinearLayout>

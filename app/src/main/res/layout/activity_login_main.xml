@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_page">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="374dp"
+        android:layout_height="132dp"
+        android:layout_margin="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="21dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="315dp"
+            android:layout_height="97dp"
+            android:layout_marginEnd="139dp"
+            android:layout_marginRight="139dp"
+            android:background="@drawable/half_white_background"
+            android:padding="25dp"
+            android:text="Login to Account"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/grey_top_corner_background"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tvCorreo"
+            android:layout_width="344dp"
+            android:layout_height="49dp"
+            android:background="@drawable/half_white_background"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Ingresa tu correo:"
+            android:inputType="textEmailAddress"
+            android:text="admin@admin.com"
+
+            android:textColor="#8e8e8e"
+            android:textStyle="bold|italic"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="259dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Contraseña"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/tvContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1sp"
+            android:background="@drawable/half_white_background"
+            android:ems="10"
+            android:hint="Contraseña:"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingLeft="2dp"
+            android:text="admin"
+            android:textAlignment="textStart"
+            android:textColor="#8e8e8e"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+
+            android:background="#800fff"
+            android:hint="Iniciar sesion"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCrearCuenta"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:background="#800fff"
+            android:hint="Crea cuenta"
+            android:textAlignment="center"
+            android:textColorHint="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

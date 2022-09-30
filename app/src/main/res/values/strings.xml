@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tagent</string>
+    <string name="hint_nombre">Nombre:</string>
+    <string name="hint_telefono">Telefono:</string>
+    <string name="hint_Correo_Electronico">Correo Electronico:</string>
+    <string name="btn_guarda">Guardar Registro</string>
+    <string name="menu_nuevo">Nuevo Registro</string>
+</resources>

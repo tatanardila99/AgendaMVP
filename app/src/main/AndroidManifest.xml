@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.semillero.agendatatan">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_iconrtagent"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_iconrtagent"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AgendaTatan">
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:name=".View.BienvenidaLogin"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".View.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.NuevoContactoMain"
+            android:exported="false" />
+
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:name=".View.LoginMain"
+            android:exported="true">
+        </activity>
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:name=".View.crearUsuarioMain"
+            android:parentActivityName=".View.MainActivity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".View.MainActivity" />
+        <activity
+            android:name=".View.VerContactoMain"
+            android:exported="false"
+            android:parentActivityName=".View.MainActivity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".View.MainActivity" />
+
+        <activity
+            android:name=".View.EditarActivityMain"
+            android:exported="false"
+            android:parentActivityName=".View.MainActivity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".View.MainActivity" />
+    </application>
+
+</manifest>
