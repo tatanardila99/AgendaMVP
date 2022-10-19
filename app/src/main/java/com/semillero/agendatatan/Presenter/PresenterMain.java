@@ -42,7 +42,6 @@ public class PresenterMain implements MainInterfaces.LoginPresenter,MainInterfac
 
     @Override
     public void validarRegistrarUsu(Context context, String nombre, String telefono, String correo, String contrasena) {
-
         loginInteractor.validarCreacionUsuario( context, nombre, telefono, correo, contrasena, this );
 
     }
